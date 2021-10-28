@@ -1,0 +1,10 @@
+# Obtain the hidden message in the hanabi folder. Be sure to look for hidden files.
+root@kali:/home/david# ls -la /home/david/.extra/hanabi
+*example:        
+total 12
+drwxr-xr-x  3 david david 4096 Oct 28 23:52 .
+drwxr-xr-x 15 david david 4096 Oct 28 21:43 ..
+-rwxr-xr-x  2 david david 4096 Oct 28 23:52 .hidden
+
+# You may change the access privileges of some folders if neccessary.
+use chmod to change access privileges of some folders or files
