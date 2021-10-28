@@ -1,0 +1,6 @@
+# find the file named "tux.bmp"
+root@kali:/home/david#  find / -type f -name tux.bmp 2>/dev/null
+
+# Now using openssl, generate and submit the sha256 digest of the file tux.bmp.
+root@kali:/home/david# openssl dgst -sha256 tux.bmp
+SHA256(magic.txt)= 035651b2889b61aee03c11aaeb256dae3a9e1d6fb3e4f6acbb2d837569e5c190
