@@ -1,0 +1,6 @@
+# generate a sha1 hash string of the welcome.txt file and submit it.
+root@kali:/home/david# cat welcome.txt
+This is your flag
+
+root@kali:/home/david# echo -n "This is your flag" | openssl sha1
+(stdin)= dba5dbba7521ceb9bf8b1f971c1ba227b673eff1
