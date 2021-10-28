@@ -1,0 +1,7 @@
+# Fetch the magic cookie entry relevant to your local display.
+
+root@kali:/home/david# cat .Xauthority 
+kali0MIT-MAGIC-COOKIE-1r5�)7y"V!5�lBh^ 
+
+root@kali:/home/david# echo xauth add `xauth list ${DISPLAY#localhost}`
+xauth add kali/unix:0 MIT-MAGIC-COOKIE-1 723583293779225621357faa6c42685e
