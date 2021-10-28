@@ -1,0 +1,11 @@
+# Obtain the public IP address of localhost
+https://www.ipify.org/
+example: 138.75.255.193
+root@kali:/home/david# echo "138.75.255.193" > public-ip.txt
+
+# then generate and submit the sha256 hash key of localhost's IP address using openssl.
+root@kali:/home/david# echo -n "138.75.255.193" | openssl dgst -sha256
+(stdin)= d154b2d47804cd35829b77afcb5499eae623bee657a9e1776612f5ffa8de12c1
+
+if cannot might try: echo -n "138.75.255.193" | sha256sum
+d154b2d47804cd35829b77afcb5499eae623bee657a9e1776612f5ffa8de12c1  -
