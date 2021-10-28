@@ -1,0 +1,5 @@
+Welcome to CTF2021!
+Enter your VM instance, search for welcome.txt and get your first flag for 100 points to get you started!
+
+root@kali:/home/david# find / -type f -name welcome.txt 2>/dev/null | xargs cat 
+This is ur flag: Hello I love ITE
