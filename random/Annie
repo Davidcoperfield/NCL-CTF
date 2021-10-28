@@ -1,0 +1,24 @@
+# A hidden text file is stored in a folder called "-" in the home directory.
+root@kali:/home/david# cd /home/david/-
+
+# Find the file and follow the instructions in the file to retrieve a text string that you should submit.
+see what is inside the - folder. Example(question they might ask)
+root@kali:/home/david# find - 
+_dolls.jpg.extracted
+_dolls.jpg.extracted/base_images
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/2DD3B.zip
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/3_c.jpg
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted/1E2D6.zip
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted/hiddenmessage.txt
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted/base_images/_4_c.jpg.extracted
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted/base_images/_4_c.jpg.extracted/flag.txt
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted/base_images/_4_c.jpg.extracted/136DA.zip
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted/base_images/4_c.jpg
+_dolls.jpg.extracted/base_images/2_c.jpg
+_dolls.jpg.extracted/4286C.zip
+
+root@kali:/home/david# find - | grep .txt
+_dolls.jpg.extracted/base_images/_2_c.jpg.extracted/base_images/_3_c.jpg.extracted/base_images/_4_c.jpg.extracted/flag.txt
