@@ -1,1 +1,7 @@
+# You are trying to create a file to store the magic cookie relevant to your local display.
+root@kali:/home/david# echo "Magic cookie get from part 2" > magic.txt
 
+# You want to do so with an openssl command to encrypt the magic cookie.
+# and output a file called authoritah_<student_id> using 128-bit AES in the Electronic Code Book (ECB) mode-of-operation.
+# The (hex-digit string) key you should use is: abcdef12345678.
+root@kali:/home/david# openssl enc --aes-128-ecb -in magic.txt -out authoritah_<student_id> -pass pass:abcdef12345678
