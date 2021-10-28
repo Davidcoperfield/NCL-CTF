@@ -1,0 +1,1 @@
+# Using the openssl command, generate the MAC (keyed-hash) of the tux.bmp file using HMAC with SHA-256.
