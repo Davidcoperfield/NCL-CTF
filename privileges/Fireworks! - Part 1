@@ -1,0 +1,16 @@
+# First, locate the hanabi folder.
+root@kali:/home/david# find / -type d -name hanabi 2>/dev/null
+example: /home/david/.extra/hanabi
+
+#  What are the privileges of the hanabi.png file? List them down and submit.
+root@kali:/home/david# ls -la /home/david/.extra/hanabi/
+drwxr-xr-x 12 david  david  4096 Oct 28 21:25 hanabi
+                ^      ^
+                |      | 
+              owner  group
+
+*meaning of drwxr-xr-x: d show it is a directory
+                       user can rwx (read, write and execute)
+                       group can r-x (read and execute only)
+                       others can r-x (read and execute only)
+
