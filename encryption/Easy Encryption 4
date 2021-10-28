@@ -1,1 +1,5 @@
 # Using the openssl command, generate the MAC (keyed-hash) of the tux.bmp file using HMAC with SHA-256.
+echo "d154b2d47804cd35829b77afcb5499eae623bee657a9e1776612f5ffa8de12c1" > SHA-256.txt
+
+root@kali:/home/david# openssl dgst -SHA256 -mac HMAC -macopt hexkey:d154b2d47804cd35829b77afcb5499eae623bee657a9e1776612f5ffa8de12c1 tux.bmp 
+HMAC-SHA256(tux.bmp)= c423b2b538c4feb59b5aec5f94b1f8f68679ef00307780ac49608884acb0dada
