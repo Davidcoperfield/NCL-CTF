@@ -1,6 +1,6 @@
 # NCL-CTF
 # Importance note*
-Please dont leak this information to anywhere our team might get inbto trouble haha
+Please dont leak this information to anywhere our team might get into trouble haha
  
 All this information is from my prediction so not 100% matched their CTF-challenges. Only take it as a reference!!
 
