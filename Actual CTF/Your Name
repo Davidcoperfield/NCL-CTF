@@ -1,0 +1,7 @@
+┌──(root💀kali)-[/home/david/Downloads/TheBardsTale]
+└─#find / -name *.txt 2>/dev/null | openssl sha1 /* | grep "6913a147c6951a6c81b7a482b7d09ee85100a2fe"
+
+SHA1(/flag.txt)= da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+
+something like this I guess
