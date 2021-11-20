@@ -1,0 +1,11 @@
+┌──(root💀kali)-[/home/david/Downloads/Centipede]
+└─# ls                   
+fragment1.jpg  fragment2.jpg
+
+┌──(root💀kali)-[/home/david/Downloads/Centipede]
+└─# strings fragment2.jpg
+[n_9
+}G&K
+CTF2021{MoveForwardLikeACentipede}
+
+at the bottom got the flag
