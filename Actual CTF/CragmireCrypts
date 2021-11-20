@@ -1,0 +1,11 @@
+┌──(root💀kali)-[/home/david/Downloads/CragmireCrypts]
+└─# openssl dgst -sha256 Kallos_Tam.png                                                                                                                                                                                                130 ⨯
+SHA256(Kallos_Tam.png)= 5fc8757bd52e785b809b5fc20c41ed6ab7ecc230745d83dce36fbc05d90bada6
+
+┌──(root💀kali)-[/home/david/Downloads/CragmireCrypts]
+└─# unzip Traven_Blackdagger.zip                                                                                                                                                                                                        82 ⨯
+Archive:  Traven_Blackdagger.zip
+[Traven_Blackdagger.zip] Traven_Blackdagger.png password: 
+  inflating: Traven_Blackdagger.png
+  
+flag is CTF2021{5fc8757bd52e785b809b5fc20c41ed6ab7ecc230745d83dce36fbc05d90bada6}
