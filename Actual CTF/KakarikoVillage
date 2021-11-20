@@ -1,0 +1,11 @@
+└─# ls
+riddle.txt  sahasrahla.txt  sahasrahla.zip
+
+┌──(root💀kali)-[/home/david/Downloads/KakarikoVillage]
+└─# cat sahasrahla.txt                                                                                                                                                                                                                   1 ⨯
+T2ggeWFoLCB5b3UgZm91bmQgU2FoYXNyYWhsYSEgLi4uIC4uLiAuLi4gR29vZCBqb2IsIGxhIGxhIQpZb3VyIGZsYWc6IENURjIwMjF7Q1VLRU1FTn0=
+
+┌──(root💀kali)-[/home/david/Downloads/KakarikoVillage]
+└─# echo "T2ggeWFoLCB5b3UgZm91bmQgU2FoYXNyYWhsYSEgLi4uIC4uLiAuLi4gR29vZCBqb2IsIGxhIGxhIQpZb3VyIGZsYWc6IENURjIwMjF7Q1VLRU1FTn0=" | base64 -d                                                                                             82 ⨯
+Oh yah, you found Sahasrahla! ... ... ... Good job, la la!
+Your flag: CTF2021{CUKEMEN}
