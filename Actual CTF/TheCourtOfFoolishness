@@ -1,0 +1,81 @@
+┌──(root💀kali)-[/home/david/Downloads/TheCourtOfFoolishness]
+└─# ls                                                                      
+here  really_here  right_here  this_way
+--------------------------------------------------------------------------------------
+┌──(root💀kali)-[/home/david/Downloads/TheCourtOfFoolishness/here]
+└─# ls | while read line; do fcrackzip -v -D -u -p wordlist.txt $line; done 
+found file 'flag10.txt', (size cp/uc     18/     6, flags 9, chk 40bc)
+found file 'flag1.txt', (size cp/uc     15/     3, flags 9, chk 4011)
+found file 'flag2.txt', (size cp/uc     21/     9, flags 9, chk 4015)
+found file 'flag3.txt', (size cp/uc     17/     5, flags 9, chk 4019)
+found file 'flag4.txt', (size cp/uc     27/    15, flags 9, chk 401d)
+
+found id 34333231, 'wordlist.txt' is not a zipfile ver 2.xx, skipping
+no usable files found
+
+cannot extract anything in this folder
+----------------------------------------------------------------------------------------
+┌──(root💀kali)-[/home/david/Downloads/TheCourtOfFoolishness/really_here]
+└─# file *
+a.zip: ASCII text
+b.zip: ASCII text
+c.zip: ASCII text
+d.zip: ASCII text
+
+all are fake zip file and no interestiong content
+----------------------------------------------------------------------------------------
+┌──(root💀kali)-[/home/david/Downloads/TheCourtOfFoolishness/this_way]
+└─# ls                                                                                                                                                                                                                                 127 ⨯
+flag.jpg 
+
+the picture is a troll picture
+-------------------------------------------------------------------------------------
+┌──(root💀kali)-[/home/david/Downloads/TheCourtOfFoolishness/right_here]
+└─# ls
+flag4Real.zip  flagFlag.zip  flagIsMe.zip       hereHereHere.zip  hereIam.zip   iAmFlag.zip  iAmRealFlag.zip  imFlag.zip  imReal.zip  meRealFlag.zip  reallyFlag.zip  wordlist.txt
+flag4u.zip     flagHere.zip  flagRightHere.zip  hereHere.zip      hereItIs.zip  iAmHere.zip  iAmReal.zip      imHere.zip  itsMe.zip   realFlag.zip    reallyHere.zip
+
+alot of zip file 
+┌──(root💀kali)-[/home/david/Downloads/TheCourtOfFoolishness/right_here]
+└─# ls | while read line; do fcrackzip -v -D -u -p wordlist.txt $line; done 
+found file 'flag4Real.txt', (size cp/uc     36/    24, flags 9, chk bf30)
+found file 'flag4u.txt', (size cp/uc     31/    19, flags 9, chk bf73)
+found file 'flagFlag.txt', (size cp/uc     22/    15, flags 9, chk bf20)
+found file 'flagHere.txt', (size cp/uc     22/    10, flags 9, chk bf12)
+found file 'flagIsMe.txt', (size cp/uc     30/    18, flags 9, chk bf59)
+found file 'flagRightHere.txt', (size cp/uc     33/    21, flags 9, chk 0d3d)
+found file 'hereHereHere.txt', (size cp/uc     28/    29, flags 9, chk 0d60)
+found file 'hereHere.txt', (size cp/uc     25/    15, flags 9, chk 0030)
+found file 'hereIam.txt', (size cp/uc    112/   100, flags 9, chk 85c8)
+
+
+PASSWORD FOUND!!!!: pw == sTuPiDpAsSwOrD
+found file 'hereItIs.txt', (size cp/uc     27/    15, flags 9, chk 0d31)
+found file 'iAmFlag.txt', (size cp/uc     29/    17, flags 9, chk bf3b)
+found file 'iAmHere.txt', (size cp/uc    112/   100, flags 9, chk 0cfb)
+found file 'iAmRealFlag.txt', (size cp/uc     31/    19, flags 9, chk 0d51)
+found file 'iAmReal.txt', (size cp/uc     34/    22, flags 9, chk bf47)
+found file 'imFlag.txt', (size cp/uc     26/    14, flags 9, chk 0d94)
+found file 'imHere.txt', (size cp/uc     26/    14, flags 9, chk 0d84)
+found file 'imReal.txt', (size cp/uc     26/    14, flags 9, chk 0d8b)
+found file 'itsMe.txt', (size cp/uc     25/    13, flags 9, chk 0010)
+found file 'meRealFlag.txt', (size cp/uc     30/    18, flags 9, chk 0d77)
+found file 'realFlag.txt', (size cp/uc     18/     6, flags 9, chk bf79)
+found file 'reallyFlag.txt', (size cp/uc     29/    17, flags 9, chk 0e00)
+found file 'reallyHere.txt', (size cp/uc     33/    21, flags 9, chk 0d19)
+found id 34333231, 'wordlist.txt' is not a zipfile ver 2.xx, skipping
+no usable files found
+
+successfully crack a password:sTuPiDpAsSwOrD from file hereIam.zip
+┌──(root💀kali)-[/home/david/Downloads/TheCourtOfFoolishness/right_here]
+└─# unzip hereIam.zip                                                                                                                                                                                                                    1 ⨯
+Archive:  hereIam.zip
+[hereIam.zip] hereIam.txt password: 
+password incorrect--reenter: 
+ extracting: hereIam.txt             
+                                                                                                                                                                                                                                             
+┌──(root💀kali)-[/home/david/Downloads/TheCourtOfFoolishness/right_here]
+└─# cat hereIam.txt
+"Never attribute to malice that which is adequately explained by stupidity"
+~CTF2021{H@nl0n'$R@z0r}
+
