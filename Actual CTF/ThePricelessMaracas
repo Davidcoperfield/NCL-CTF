@@ -1,0 +1,23 @@
+Use Audacity to view the waveform. There is a dot and a line (-). This refers to morse code. 
+-.-- --- ..- .-. -.- . -.-- .. ... ---... .... . ... - ..-
+
+after decode you will get this 
+YOURKEYIS:HESTU
+
+┌──(root💀kali)-[/home/david/Downloads/ThePricelessMaracas]
+└─# unzip maracas.zip           
+Archive:  maracas.zip
+[maracas.zip] maracas.txt password: 
+password incorrect--reenter: 
+  inflating: maracas.txt
+
+┌──(root💀kali)-[/home/david/Downloads/ThePricelessMaracas]
+└─# cat maracas.txt       
+
+Shala-kala! Those are my maracas! Please giivveeee them to meeeee!!
+\(^_^)/ Da-na-na-naaaa!
+
+Your flag is here:
+CTF2021{br3@th0f+h3W!ld}
+
+Thank you, shalakala! <3
